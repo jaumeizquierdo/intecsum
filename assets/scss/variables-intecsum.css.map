@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,YAAY;AFGZ,qCAAqC;AAUtB,WAAW",
+    "sources": [
+        "variables-intecsum.scss",
+        "materialdesign.scss",
+        "mixins.scss"
+    ],
+    "names": [],
+    "file": "variables-intecsum.css"
+}
