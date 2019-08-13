@@ -254,7 +254,7 @@ strong {
     background: url(https://public.gaolos.com/cdn/public/intecsum/img/intecsum-logo.svg) no-repeat !important;
     display: block;
     width: 500px;
-    height: 100px;
+    height: 80px;
     transition: none !important;
 }
 
@@ -752,7 +752,8 @@ a.special-link {
 
 /* Section Title */
 
-.section-title {
+.section-title,
+.section-title-2 {
     h2, h4 {
         margin: 0;
         padding: 0;
@@ -796,6 +797,12 @@ a.special-link {
         width: 80px !important;
         height: 4px !important;
         border-radius: 2px;
+    }
+}
+
+.section-title-2 {
+    h2 {
+        font-size: 1.5rem !important;
     }
 }
 
@@ -1025,6 +1032,26 @@ a.special-link {
     }
 }
 
+.card-row {
+    .img-producto {
+        img {
+            border-radius: 3px !important;
+            box-shadow: 0 0 5px $md-grey-300;
+        }
+    }
+}
+
+.card-row,
+.card-col {
+    .card-text {
+        line-height: 1.4em;
+    }
+
+    .btn {
+        font-size: 1em;
+    }
+}
+
 .card-no-shadow {
     box-shadow: none;
 }
@@ -1115,6 +1142,122 @@ table {
         p {
             font-size: 1em;
         }
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////
+/// Product                                                           ///
+/////////////////////////////////////////////////////////////////////////
+
+.info-header {
+    p {
+        margin-bottom: 0;
+    }
+    h2 {
+        color: $md-grey-600;
+        font-size: 1.4em;
+        a {
+            font-weight: 800;
+        }
+    }
+}
+
+.products-menu {
+    .list-title {
+        margin-bottom: 1rem;
+        background: $main-color;
+        border-bottom: 1px solid darken($main-color, 4);
+        color: #fff;
+        padding: 0.2rem 0.5rem;
+        font-weight: 800;
+        font-size: 1.1em;
+        border-radius: 3px;
+    }
+    ul {
+        margin-bottom: 1rem;
+        li {
+            a {
+                font-size: 1em;
+                font-weight: 500;
+                display: block;
+                padding: 0.3rem 0.5rem;
+                border-bottom: 1px solid #fff;
+                transition: all ease-in-out .3s;
+                &:hover {
+                    background: rgba($main-color, 0.2);
+                    border-bottom: 1px solid rgba($main-color, 0.3);
+                    border-radius: 3px;
+                    padding-left: 0.8rem;
+                }
+                
+            } 
+            .list-active {
+                background: rgba($main-color, 0.2);
+                border-bottom: 1px solid rgba($main-color, 0.3);
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+.product-info {
+    p {
+        margin-bottom: 0.3rem;
+    }
+    .product-info-title {
+        font-size: 0.9em;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: $main-color;
+        border-left: 5px solid $main-color;
+        padding-left: 5px;
+    }
+}
+
+.table-price {
+    width: 100%;
+    border: 1px solid rgba($main-color, .3);
+    box-shadow: 0 0 2px rgba($main-color, .3);
+    &:hover {
+        border: 1px solid rgba($main-color, .5);
+    }
+    p {
+        margin-bottom: 0;
+    }
+    th, td {
+        padding: 0.5rem;
+        font-size: 0.9em;
+    }
+    th {
+        background: rgba($main-color, 0.2);
+        padding: 0.2rem 0.5rem;
+        border-bottom: 1px solid rgba($main-color, 0.5);
+        color: $main-color;
+    }
+}
+
+.stock-group {
+    input, button {
+        font-size: 1em;
+    }
+    input {
+        padding: 0 0.5rem;
+        width: 50px;
+        border: 1px solid rgba($main-color, .5);
+    }
+    .btn-outline-secondary {
+        border: 1px solid rgba($main-color, .5) !important;
+        &:hover {
+            background: rgba($main-color, .7);
+        }
+    }
+}
+
+.card-group-col {
+    padding-left: 13px;
+    .card-col {
+        min-width: 250px;
+        max-width: 250px;
     }
 }
 
@@ -1290,6 +1433,15 @@ table {
     border-color: $main-color;
 }
 
+.page-item {
+    .active {
+        color: #fff;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
 .page-link:focus, .page-link:hover {
     color: $main-color;
 }
@@ -1302,7 +1454,8 @@ table {
 /// Parallax & Carousel                                               ///
 /////////////////////////////////////////////////////////////////////////
 
-.parallax {
+.parallax,
+.parallax-product {
     background-size: cover !important;
     background-attachment: fixed !important;
     background-position: center;
@@ -1321,6 +1474,10 @@ table {
             color: #fff;
         }
     }
+}
+
+.parallax-product {
+    height: 15rem;
 }
 
 .parallax-home {

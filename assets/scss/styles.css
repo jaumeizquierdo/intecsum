@@ -361,7 +361,7 @@ strong {
   background: url(https://public.gaolos.com/cdn/public/intecsum/img/intecsum-logo.svg) no-repeat !important;
   display: block;
   width: 500px;
-  height: 100px;
+  height: 80px;
   -webkit-transition: none !important;
   transition: none !important;
 }
@@ -850,7 +850,9 @@ a.special-link:before {
 }
 
 /* Section Title */
-.section-title h2, .section-title h4 {
+.section-title h2, .section-title h4,
+.section-title-2 h2,
+.section-title-2 h4 {
   margin: 0;
   padding: 0;
   color: #000;
@@ -858,7 +860,9 @@ a.special-link:before {
 }
 
 .section-title h2::after,
-.section-title h4::after {
+.section-title h4::after,
+.section-title-2 h2::after,
+.section-title-2 h4::after {
   content: '';
   width: 80px;
   height: 5px;
@@ -869,14 +873,16 @@ a.special-link:before {
   border-radius: 2px;
 }
 
-.section-title h4::after {
+.section-title h4::after,
+.section-title-2 h4::after {
   width: 80px;
   height: 3px;
   background-color: #eeeeee;
   border-radius: 2px;
 }
 
-.section-title h2 {
+.section-title h2,
+.section-title-2 h2 {
   font-weight: 800;
   font-size: 1.8rem !important;
 }
@@ -889,6 +895,10 @@ a.special-link:before {
   width: 80px !important;
   height: 4px !important;
   border-radius: 2px;
+}
+
+.section-title-2 h2 {
+  font-size: 1.5rem !important;
 }
 
 /* Top Header */
@@ -1118,6 +1128,22 @@ a.special-link:before {
   border-bottom: 2px solid #96B734;
 }
 
+.card-row .img-producto img {
+  border-radius: 3px !important;
+  -webkit-box-shadow: 0 0 5px #e0e0e0;
+          box-shadow: 0 0 5px #e0e0e0;
+}
+
+.card-row .card-text,
+.card-col .card-text {
+  line-height: 1.4em;
+}
+
+.card-row .btn,
+.card-col .btn {
+  font-size: 1em;
+}
+
 .card-no-shadow {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1203,6 +1229,124 @@ a.special-link:before {
 /* Table */
 table th p, table td p {
   font-size: 1em;
+}
+
+.info-header p {
+  margin-bottom: 0;
+}
+
+.info-header h2 {
+  color: #757575;
+  font-size: 1.4em;
+}
+
+.info-header h2 a {
+  font-weight: 800;
+}
+
+.products-menu .list-title {
+  margin-bottom: 1rem;
+  background: #96B734;
+  border-bottom: 1px solid #89a72f;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  font-weight: 800;
+  font-size: 1.1em;
+  border-radius: 3px;
+}
+
+.products-menu ul {
+  margin-bottom: 1rem;
+}
+
+.products-menu ul li a {
+  font-size: 1em;
+  font-weight: 500;
+  display: block;
+  padding: 0.3rem 0.5rem;
+  border-bottom: 1px solid #fff;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.products-menu ul li a:hover {
+  background: rgba(150, 183, 52, 0.2);
+  border-bottom: 1px solid rgba(150, 183, 52, 0.3);
+  border-radius: 3px;
+  padding-left: 0.8rem;
+}
+
+.products-menu ul li .list-active {
+  background: rgba(150, 183, 52, 0.2);
+  border-bottom: 1px solid rgba(150, 183, 52, 0.3);
+  border-radius: 3px;
+}
+
+.product-info p {
+  margin-bottom: 0.3rem;
+}
+
+.product-info .product-info-title {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #96B734;
+  border-left: 5px solid #96B734;
+  padding-left: 5px;
+}
+
+.table-price {
+  width: 100%;
+  border: 1px solid rgba(150, 183, 52, 0.3);
+  -webkit-box-shadow: 0 0 2px rgba(150, 183, 52, 0.3);
+          box-shadow: 0 0 2px rgba(150, 183, 52, 0.3);
+}
+
+.table-price:hover {
+  border: 1px solid rgba(150, 183, 52, 0.5);
+}
+
+.table-price p {
+  margin-bottom: 0;
+}
+
+.table-price th, .table-price td {
+  padding: 0.5rem;
+  font-size: 0.9em;
+}
+
+.table-price th {
+  background: rgba(150, 183, 52, 0.2);
+  padding: 0.2rem 0.5rem;
+  border-bottom: 1px solid rgba(150, 183, 52, 0.5);
+  color: #96B734;
+}
+
+.stock-group input, .stock-group button {
+  font-size: 1em;
+}
+
+.stock-group input {
+  padding: 0 0.5rem;
+  width: 50px;
+  border: 1px solid rgba(150, 183, 52, 0.5);
+}
+
+.stock-group .btn-outline-secondary {
+  border: 1px solid rgba(150, 183, 52, 0.5) !important;
+}
+
+.stock-group .btn-outline-secondary:hover {
+  background: rgba(150, 183, 52, 0.7);
+}
+
+.card-group-col {
+  padding-left: 13px;
+}
+
+.card-group-col .card-col {
+  min-width: 250px;
+  max-width: 250px;
 }
 
 /* Top Stripes */
@@ -1367,6 +1511,14 @@ table th p, table td p {
   border-color: #96B734;
 }
 
+.page-item .active {
+  color: #fff;
+}
+
+.page-item .active:hover {
+  color: #fff;
+}
+
 .page-link:focus, .page-link:hover {
   color: #96B734;
 }
@@ -1375,7 +1527,8 @@ table th p, table td p {
   color: #96B734 !important;
 }
 
-.parallax {
+.parallax,
+.parallax-product {
   background-size: cover !important;
   background-attachment: fixed !important;
   background-position: center;
@@ -1384,18 +1537,25 @@ table th p, table td p {
   border-bottom: 10px solid #96B734;
 }
 
-.parallax h3 {
+.parallax h3,
+.parallax-product h3 {
   font-weight: 800;
   font-size: 3em !important;
 }
 
-.parallax h5 {
+.parallax h5,
+.parallax-product h5 {
   font-weight: 400;
   color: #fff;
 }
 
-.parallax h5 a {
+.parallax h5 a,
+.parallax-product h5 a {
   color: #fff;
+}
+
+.parallax-product {
+  height: 15rem;
 }
 
 .parallax-home {
